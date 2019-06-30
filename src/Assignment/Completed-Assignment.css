@@ -1,0 +1,112 @@
+.comp-assign-par {
+  overflow-x: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (100%)[1];
+      grid-template-rows: repeat(1, 100%);
+  grid-auto-flow: column;
+  grid-auto-columns: 310px;
+  grid-gap: 30px;
+  width: 87%;
+  height: 93%;
+  margin-left: 11%;
+  padding: 20px;
+}
+
+.comp-assign-par .assignment-cover {
+  width: 100%;
+  height: 80%;
+  margin-top: 80px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: #000 1px 1px 20px 2px;
+          box-shadow: #000 1px 1px 20px 2px;
+}
+
+.comp-assign-par .assignment-cover .lang-photo {
+  width: 100%;
+  height: 40%;
+  background-size: 100% 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.comp-assign-par .assignment-cover .jsp {
+  background-image: url("forjs.jpg");
+}
+
+.comp-assign-par .assignment-cover .htmlp {
+  background-image: url("forhtml.jpg");
+}
+
+.comp-assign-par .assignment-cover .reactp {
+  background-image: url("forreact.png");
+}
+
+.comp-assign-par .assignment-cover .pythonp {
+  background-image: url("forpython.jpg");
+}
+
+.comp-assign-par .assignment-cover .cppp {
+  background-image: url("forc++.jpg");
+}
+
+.comp-assign-par .assignment-cover .angularp {
+  background-image: url("forangular.jpg");
+}
+
+.comp-assign-par .assignment-cover .star-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 8%;
+  margin-left: 15%;
+  margin-top: 2%;
+}
+
+.comp-assign-par .assignment-cover .star-rating .starr {
+  font-size: 30px;
+  color: #00bcd4;
+  margin-left: 10px;
+}
+
+.comp-assign-par .assignment-cover .tex-b {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.767);
+  font-weight: bolder;
+}
+
+.comp-assign-par .assignment-cover .task-tex {
+  font-family: "Sofia";
+  margin-top: 15px;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.comp-assign-par .assignment-cover .view-details {
+  display: inline-block;
+  padding: 12px 20px;
+  border: solid #e91e63 1px;
+  margin-top: 50px;
+  background: #e91e63;
+  color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: #e91e6288 1px 5px 20px 3px;
+          box-shadow: #e91e6288 1px 5px 20px 3px;
+  font-size: 14px;
+}
+
+.comp-assign-par .assignment-cover:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  width: 102%;
+  height: 84%;
+}
+/*# sourceMappingURL=Completed-Assignment.css.map */
