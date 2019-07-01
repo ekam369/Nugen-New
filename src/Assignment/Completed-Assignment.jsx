@@ -6,8 +6,11 @@ class CompletedAssignment extends Component {
         return (  
             <div className="comp-assign-par">
                 <div className="assignment-cover">
-                <div className="date">1</div>
-                    <div className="lang-photo jsp"></div>
+                    <div className="lang-photo jsp">
+                        <div className="date">
+                            <div className="no">1</div>
+                        </div>
+                    </div>
                     <div className="star-rating">
                         <i class="fa fa-star checked starr"></i>
                         <i class="fa fa-star checked starr"></i>
@@ -20,8 +23,11 @@ class CompletedAssignment extends Component {
                     <div className="view-details">View Details</div>
                 </div>
                 <div className="assignment-cover">
-                    <div className="date">2</div>
-                    <div className="lang-photo htmlp"></div>
+                    <div className="lang-photo htmlp">
+                        <div className="date">
+                            <div className="no">2</div>
+                        </div>
+                    </div>
                     <div className="star-rating">
                         <i class="fa fa-star checked starr"></i>
                         <i class="fa fa-star checked starr"></i>
@@ -34,8 +40,11 @@ class CompletedAssignment extends Component {
                     <div className="view-details">View Details</div>
                 </div>
                 <div className="assignment-cover">
-                    <div className="date">3</div>
-                    <div className="lang-photo cppp"></div>
+                    <div className="lang-photo cppp">
+                        <div className="date">
+                            <div className="no">3</div>
+                        </div>
+                    </div>
                     <div className="star-rating">
                         <i class="fa fa-star checked starr"></i>
                         <i class="fa fa-star checked starr"></i>
@@ -48,8 +57,11 @@ class CompletedAssignment extends Component {
                     <div className="view-details">View Details</div>
                 </div>
                 <div className="assignment-cover">
-                    <div className="date">4</div>
-                    <div className="lang-photo reactp"></div>
+                    <div className="lang-photo reactp">
+                        <div className="date">
+                            <div className="no">4</div>
+                        </div>
+                    </div>
                     <div className="star-rating">
                         <i class="fa fa-star checked starr"></i>
                         <i class="fa fa-star checked starr"></i>
@@ -62,8 +74,11 @@ class CompletedAssignment extends Component {
                     <div className="view-details">View Details</div>
                 </div>
                 <div className="assignment-cover">
-                    <div className="date">5</div>
-                    <div className="lang-photo pythonp"></div>
+                    <div className="lang-photo pythonp">
+                        <div className="date">
+                            <div className="no">5</div>
+                        </div>
+                    </div>
                     <div className="star-rating">
                         <i class="fa fa-star checked starr"></i>
                         <i class="fa fa-star checked starr"></i>
@@ -76,8 +91,11 @@ class CompletedAssignment extends Component {
                     <div className="view-details">View Details</div>
                 </div>
                 <div className="assignment-cover">
-                    <div className="date">6</div>
-                    <div className="lang-photo cppp"></div>
+                    <div className="lang-photo cppp">
+                        <div className="date">
+                            <div className="no">6</div>
+                        </div>
+                    </div>
                     <div className="star-rating">
                         <i class="fa fa-star checked starr"></i>
                         <i class="fa fa-star checked starr"></i>
@@ -90,8 +108,11 @@ class CompletedAssignment extends Component {
                     <div className="view-details">View Details</div>
                 </div>
                 <div className="assignment-cover">
-                    <div className="date">7</div>
-                    <div className="lang-photo angularp"></div>
+                    <div className="lang-photo angularp">
+                        <div className="date">
+                            <div className="no">7</div>
+                        </div>
+                    </div>
                     <div className="star-rating">
                         <i class="fa fa-star checked starr"></i>
                         <i class="fa fa-star checked starr"></i>
@@ -104,8 +125,11 @@ class CompletedAssignment extends Component {
                     <div className="view-details">View Details</div>
                 </div>
                 <div className="assignment-cover">
-                    <div className="date">8</div>
-                    <div className="lang-photo htmlp"></div>
+                    <div className="lang-photo htmlp">
+                        <div className="date">
+                            <div className="no">8</div>
+                        </div>
+                    </div>
                     <div className="star-rating">
                         <i class="fa fa-star checked starr"></i>
                         <i class="fa fa-star checked starr"></i>
