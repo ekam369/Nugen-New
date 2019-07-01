@@ -14,18 +14,41 @@
 }
 
 .comp-assign-par .assignment-cover {
-  width: 100%;
-  height: 80%;
-  margin-top: 80px;
+  width: 95%;
+  height: 65%;
+  margin-top: 160px;
+  margin-left: 20px;
   background: #fff;
   border-radius: 10px;
   -webkit-box-shadow: #000 1px 1px 20px 2px;
           box-shadow: #000 1px 1px 20px 2px;
 }
 
+.comp-assign-par .assignment-cover .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #9c27b0;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 50px;
+  z-index: 2;
+}
+
 .comp-assign-par .assignment-cover .lang-photo {
   width: 100%;
   height: 40%;
+  margin-top: -50px;
   background-size: 100% 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -72,12 +95,13 @@
 }
 
 .comp-assign-par .assignment-cover .star-rating .starr {
-  font-size: 30px;
+  font-size: 25px;
   color: #00bcd4;
   margin-left: 10px;
 }
 
 .comp-assign-par .assignment-cover .tex-b {
+  margin-top: 10px;
   font-size: 30px;
   color: rgba(0, 0, 0, 0.767);
   font-weight: bolder;
@@ -85,7 +109,7 @@
 
 .comp-assign-par .assignment-cover .task-tex {
   font-family: "Sofia";
-  margin-top: 15px;
+  margin-top: 8px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -94,7 +118,7 @@
   display: inline-block;
   padding: 12px 20px;
   border: solid #e91e63 1px;
-  margin-top: 50px;
+  margin-top: 42px;
   background: #e91e63;
   color: #fff;
   border-radius: 20px;
@@ -106,7 +130,7 @@
 .comp-assign-par .assignment-cover:hover {
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  width: 102%;
-  height: 84%;
+  width: 100%;
+  height: 70%;
 }
 /*# sourceMappingURL=Completed-Assignment.css.map */

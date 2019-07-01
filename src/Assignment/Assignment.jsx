@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './Assignment.css';
 import CompletedAssignment from './Completed-Assignment';
+import TodayTask from './TodayTask';
 
 class Assignment extends Component {
     render() { 
         return (  
             <div className="assign-par">
+                <TodayTask />
                 <div className="prev-assign">
                     <div className="month-block">
                         <div className="month-cover">

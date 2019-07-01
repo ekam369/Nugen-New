@@ -1,0 +1,102 @@
+.today-par {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background: radial-gradient(#fffefe, #b6b6b6);
+}
+
+.today-par .today-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  padding: 10px 0px;
+  width: 110px;
+  height: 100px;
+  background: #9c27b0;
+  margin-left: 3%;
+  margin-top: 6%;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 40px;
+  border: #000 solid 2px;
+}
+
+.today-par .today-date .mon {
+  font-family: "Alex Brush";
+  font-weight: bolder;
+}
+
+.today-par .today-task-cover {
+  margin-top: 2%;
+  margin-left: 12%;
+  width: 36%;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: #000 1px 1px 20px 2px;
+          box-shadow: #000 1px 1px 20px 2px;
+}
+
+.today-par .today-task-cover .task-photo {
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  float: left;
+}
+
+.today-par .today-task-cover .jsp {
+  background-size: 100% 100%;
+  background-image: url("forjs.jpg");
+}
+
+.today-par .today-task-cover .total-rating {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #00bcd4;
+  font-weight: bolder;
+}
+
+.today-par .today-task-cover .task-tex1-cover {
+  width: 40%;
+  height: 80%;
+  margin-left: 43%;
+  padding-top: 0.1%;
+  text-align: left;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.today-par .today-task-cover .task1-desc {
+  margin-top: 10px;
+  font-size: 20px;
+  width: 360px;
+  font-family: "Sofia";
+  font-weight: 100;
+}
+
+.today-par .today-task-cover .upload-but {
+  display: inline-block;
+  font-size: 19px;
+  border: solid #e91e63 1px;
+  border-radius: 20px;
+  padding: 8px 50px;
+  margin-left: 38%;
+  margin-top: 30px;
+  background: #e91e63;
+  color: #fff;
+}
+/*# sourceMappingURL=TodayTask.css.map */
