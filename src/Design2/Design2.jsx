@@ -15,11 +15,11 @@ class Design2 extends Component {
                             <div className="task-name">Move Person</div>
                             <div className="rating">4.5</div>
                             <div className="star-rating">
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star-half-full half-checked starr"></i>
-                                <i class="fa fa-star-o unchecked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star-half-full half-checked starr"></i>
+                                <i className="fa fa-star-o unchecked starr"></i>
                             </div>
                             <div className="details">
                                 <div className="line l1"></div>
@@ -34,11 +34,11 @@ class Design2 extends Component {
                             <div className="task-name">Move Person</div>
                             <div className="rating">4.5</div>
                             <div className="star-rating">
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star-half-full half-checked starr"></i>
-                                <i class="fa fa-star-o unchecked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star-half-full half-checked starr"></i>
+                                <i className="fa fa-star-o unchecked starr"></i>
                             </div>
                             <div className="details">
                                 <div className="line l1"></div>
@@ -53,11 +53,11 @@ class Design2 extends Component {
                             <div className="task-name">Move Person</div>
                             <div className="rating">4.5</div>
                             <div className="star-rating">
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star-half-full half-checked starr"></i>
-                                <i class="fa fa-star-o unchecked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star-half-full half-checked starr"></i>
+                                <i className="fa fa-star-o unchecked starr"></i>
                             </div>
                             <div className="details">
                                 <div className="line l1"></div>
@@ -72,11 +72,11 @@ class Design2 extends Component {
                             <div className="task-name">Move Person</div>
                             <div className="rating">4.5</div>
                             <div className="star-rating">
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star-half-full half-checked starr"></i>
-                                <i class="fa fa-star-o unchecked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star-half-full half-checked starr"></i>
+                                <i className="fa fa-star-o unchecked starr"></i>
                             </div>
                             <div className="details">
                                 <div className="line l1"></div>
@@ -91,11 +91,11 @@ class Design2 extends Component {
                             <div className="task-name">Move Person</div>
                             <div className="rating">4.5</div>
                             <div className="star-rating">
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star-half-full half-checked starr"></i>
-                                <i class="fa fa-star-o unchecked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star-half-full half-checked starr"></i>
+                                <i className="fa fa-star-o unchecked starr"></i>
                             </div>
                             <div className="details">
                                 <div className="line l1"></div>
@@ -110,11 +110,11 @@ class Design2 extends Component {
                             <div className="task-name">Move Person</div>
                             <div className="rating">4.5</div>
                             <div className="star-rating">
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star checked starr"></i>
-                                <i class="fa fa-star-half-full half-checked starr"></i>
-                                <i class="fa fa-star-o unchecked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star checked starr"></i>
+                                <i className="fa fa-star-half-full half-checked starr"></i>
+                                <i className="fa fa-star-o unchecked starr"></i>
                             </div>
                             <div className="details">
                                 <div className="line l1"></div>

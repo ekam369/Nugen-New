@@ -15,22 +15,10 @@ class Head extends Component {
 
     render() { 
 
-        const style1 = {
-            display: 'inline-block',
-            cursor: 'pointer'
-        }
-        const style2 = {
-            width: '35px',
-            height: '5px',
-            background: '#333',
-            margin: '6px 0',
-            transition: '0.4s'
-        }
-
         return (  
             <div className="head-container">
                 <div className="tab-container">
-                    <div onClick={this.rotateCross} classname="container">
+                    <div onClick={this.rotateCross} >
                         <div id="bar1" className="bars bar1"></div>
                         <div id="bar2" className="bars bar2"></div>
                         <div id="bar3" className="bars bar3"></div>

@@ -7,7 +7,7 @@ class Photo extends Component {
             <div className="right-cover">
                 <div className="photo"></div>
                 <div className="message">
-                    <i class='fas fa-comment-alt message-icon'></i>
+                    <i className='fas fa-comment-alt message-icon'></i>
                 </div>
             </div>
         );

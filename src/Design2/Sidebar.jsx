@@ -12,7 +12,7 @@ class Sidebar extends Component {
         return (
             <div>
                 <div className="arrow">
-                    <i class='fas fa-angle-double-right side-right'></i>
+                    <i className='fas fa-angle-double-right side-right'></i>
                 </div>
                 <div className="side-par">
                 <div onClick={this.show} className="new-task-cicle">
