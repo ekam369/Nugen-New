@@ -1,28 +1,28 @@
 .right-cover {
   position: absolute;
-  width: 300px;
+  width: 260px;
   height: 100%;
-  right: 9%;
+  right: 0;
 }
 
-.right-cover .tab {
-  display: block;
-  width: 70px;
-  height: 10px;
-  color: #fff;
-  padding: 25px;
+@media (min-width: 940px) {
+  .right-cover {
+    right: 30px;
+  }
 }
 
-.right-cover .tab:hover {
-  background: #ed437d;
+@media (min-width: 1000px) {
+  .right-cover {
+    right: 70px;
+  }
 }
 
 .right-cover .photo {
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-image: url("im.jpeg");
+  background-image: url("../images/im.jpeg");
   background-size: 100% 130%;
   background-position-y: -2px;
   margin-top: -50px;
@@ -40,8 +40,8 @@
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   background: #2c2c2c;
   margin-top: -50px;
   margin-left: 210px;
@@ -49,7 +49,7 @@
 }
 
 .right-cover .message-icon {
-  font-size: 20px;
+  font-size: 18px;
   color: #fff;
 }
 /*# sourceMappingURL=Photo.css.map */

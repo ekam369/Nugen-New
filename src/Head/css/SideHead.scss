@@ -1,0 +1,107 @@
+$colors: (
+  tex: #fff,
+  temp: #000,
+  purplee: #9368e9
+);
+
+$borders: (
+  border-botm: solid rgba(12, 12, 12, 0.192) 1px,
+  border-lefts: solid rgba(12, 12, 12, 0.103) 2px,
+  border1: solid #9368e9 2px,
+  border2: solid 1px rgba(255, 255, 255, 0.301),
+  border3: solid 9px #000
+);
+
+$desk0: 650px;
+$desk1: 825px;
+@mixin desk0 {
+  @media (min-width: $desk0) {
+    @content;
+  }
+}
+@mixin desk1 {
+    @media (min-width: $desk1) {
+      @content;
+    }
+  }
+
+@function color($name) {
+  @return map-get($colors, $name);
+}
+@function border($name) {
+  @return map-get($borders, $name);
+}
+
+.bar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  margin-top: 70px;
+  background: rgb(49, 49, 49);
+  z-index: 2;
+  box-shadow: #000 1px 1px 20px 2px;
+  @include desk0 {
+    width: 550px;
+  }
+  @include desk1{
+      visibility: hidden;
+  }
+
+  .tabs {
+    // margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .tab {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      font-weight: 100;
+      color: #fff;
+
+      .tab-cover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 115%;
+        border-bottom: border(border2);
+
+        .tab-tex {
+          position: absolute;
+          left: 50px;
+          font-size: 22px;
+
+          @include desk0 {
+            left: 55px;
+            font-size: 20px;
+          }
+        }
+
+        .ico {
+          position: absolute;
+          right: 50px;
+          font-size: 20px;
+          padding-left: 90px;
+
+          @include desk0 {
+            right: 55px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .tab:hover {
+      transition: 0.7s;
+      background: #e91e6286;
+      color: #fff;
+      // color: rgb(40, 142, 226);
+    }
+  }
+}

@@ -7,34 +7,42 @@ $color : (
     dark: rgb(44, 44, 44)
 );
 
+$desk1: 940px;
+$desk2: 1000px;
+@mixin  desk1 {
+    @media (min-width: $desk1) {
+        @content;
+    }
+}
+@mixin  desk2 {
+    @media (min-width: $desk2) {
+        @content;
+    }
+}
+
 @function color($name){
     @return map-get($color, $name);  
 };
 
 .right-cover{
     position: absolute;
-    width: 300px;
+    width: 260px;
     height: 100%;
-    right: 9%;
-    // background: #000;
+    right: 0;
 
-    .tab{
-        display: block;
-        width: 70px;
-        height: 10px;
-        color: #fff;
-        padding: 25px;
+    @include desk1{
+        right: 30px;
     }
-    .tab:hover{
-        background: color(main-light);
+    @include desk2{
+        right: 70px;
     }
 
     .photo{
         position: absolute;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        background-image: url("im.jpeg");
+        background-image: url("../images/im.jpeg");
         background-size: 100% 130%;
         background-position-y: -2px;
         margin-top: -50px;
@@ -46,15 +54,15 @@ $color : (
         justify-content: center;
         align-items: center;
         position: absolute;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         background: color(dark);
         margin-top: -50px;
         margin-left: 210px;
         border-radius: 50%;
     }
     .message-icon{
-        font-size: 20px;
+        font-size: 18px;
         color: #fff;
     }
 }

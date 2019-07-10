@@ -1,0 +1,212 @@
+$desk1: 900px;
+$desk2: 901px;
+$desk3: 1100px;
+$desk4: 1450px;
+$desk5: 1700px;
+$desk6: 1853px;
+
+@mixin desk1{
+    @media (max-width: $desk1){
+        @content;
+    }
+}
+@mixin desk2{
+    @media (min-width: $desk2){
+        @content;
+    }
+}
+@mixin desk3{
+    @media (min-width: $desk3){
+        @content;
+    }
+}
+@mixin desk4{
+    @media (min-width: $desk4){
+        @content;
+    }
+}
+@mixin desk5{
+    @media (min-width: $desk5){
+        @content;
+    }
+}
+@mixin desk6{
+    @media (min-width: $desk6){
+        @content;
+    }
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-left: 1%;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.815);
+    margin-top: 430px;
+    z-index: 3;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    @include desk1{
+        margin-left: 2%;
+    }
+    @include desk2{
+        margin-left: 2%;
+        width: 50px;
+    }
+    @include desk3{
+        visibility: hidden;
+    }
+
+    .side-right{
+        color: #fff;
+        font-size: 30px;
+    }
+}
+.side-par{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    margin-top: 60px;
+    background: rgba(0, 0, 0, 0.267);
+    
+    @include desk3{
+        visibility: visible;
+        width: 50px;
+        background: none;
+    }
+    @include desk4{
+        width: 55px;   
+    }
+    @include desk5{
+        width: 70px;   
+    }
+    @include desk6{
+        width: 80px;
+    }
+
+    .new-task-cicle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: #fff;
+        border-top: rgb(255, 0, 0) 3px solid;
+        border-left: rgb(251, 255, 0) 3px solid;
+        border-bottom: rgb(21, 255, 0) 3px solid;
+        border-right: rgb(0, 38, 255) 3px solid;
+        box-shadow: rgb(105, 105, 105) 1px 1px 20px 2px;
+        animation: movcircle 3s ease-out infinite;
+     
+        @include desk3{
+            width: 30px;
+            height: 30px;
+        }
+        @include desk4{
+            width: 40px;
+            height: 40px;
+        }
+
+        .plus{
+            width: 2px;
+        }
+        .p1{
+            position: absolute;
+            height: 25px;
+            background: rgb(112, 112, 112);
+            border: solid 1px rgb(112, 112, 112);
+
+            @include desk3{
+                height: 18px;
+            }
+            @include desk4{
+                height: 22px;
+            }
+        }
+        .p2{
+            width: 25px;
+            height: 2px;
+            background: rgb(112, 112, 112);
+            border: solid 1px rgb(112, 112, 112);
+
+            @include desk3{
+                width: 18px;
+            }
+            @include desk4{
+                width: 22px;
+            }
+        }
+    }
+    .logo-cont{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        margin-top: 180px;
+        // background: #000;
+
+        .logo{
+            margin-top: 50px;
+            width: 30px;
+            height: 30px;
+            background-size: 100% 100%;
+            border-radius: 50%;
+            box-shadow: #000 1px 1px 4px 2px;
+
+            @include desk3{
+                width: 25px;
+                height: 25px;
+            }
+            @include desk4{
+                width: 27px;
+                height: 27px;
+            }
+            @include desk5{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .lo1{
+            background-image: url("../images/html.png");
+        }
+        .lo2{
+            background-image: url("../images/js.svg");
+        }
+        .lo3{
+            background-image: url("../images/react.png");
+        }
+        .lo4{
+            background-image: url("../images/python.png");
+        }
+        .lo5{
+            background-image: url("../images/angular.png");
+        }
+        .lo6{
+            background-image: url("../images/c++.png");
+        }
+    }
+}
+
+@keyframes movcircle{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

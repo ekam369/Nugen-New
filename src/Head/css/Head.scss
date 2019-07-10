@@ -1,0 +1,130 @@
+$color : (
+    main: #e91e63,
+    main-light: lighten(#e91e63, 8%),
+    temp : #000,
+    tex : #fff 
+);
+
+@function color($name){
+    @return map-get($color, $name);  
+};
+
+$desk1: 825px;
+$desk2: 900px;
+$desk3: 1000px;
+$desk4: 1400px;
+
+@mixin desk1{
+    @media (min-width: $desk1){
+        @content;
+    }
+}
+@mixin desk2{
+    @media (min-width: $desk2){
+        @content;
+    }
+}
+@mixin desk3{
+    @media (min-width: $desk3){
+        @content;
+    }
+}
+@mixin desk4{
+    @media (min-width: $desk4){
+        @content;
+    }
+}
+
+.head-container{
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background: color(main);
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.377) 1px 1px 30px 2px;
+
+    .tab-container{
+        width: 75%;
+        height: 100%;
+        margin-left: 2%;
+        @include desk1{
+            margin-left: 1%;
+        }
+        @include desk3{
+            margin-left: 1.5%;
+        }
+        @include desk4{
+            margin-left: 2%;
+        }
+        .container {
+            display: inline-block;
+            cursor: pointer;
+          }
+          
+          .bars{
+                position: absolute;
+                width: 28px;
+                height: 3px;
+                background-color: #fff;
+                transition: 0.4s;
+
+                @include desk1{
+                    visibility: hidden;
+                }
+          }
+
+          .bar1{
+            margin-top: 25px;
+          }
+          .bar2{
+              margin-top: 33px;
+          }
+          .bar3{
+            margin-top: 41px;
+          }
+          
+
+        .tabs{
+            visibility: hidden;
+            position: absolute;
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            justify-content: center;
+            padding: 7px 2em;
+            float: left;
+
+            @include desk1{
+                visibility: visible;
+            }
+            ul{
+                list-style-type: none;
+            }
+            .tab{
+                display: inline;
+                width: 100px;
+                height: 22px;
+                color: color(tex);
+                padding: 17px;                
+                // background: color(temp);
+
+                @include desk1{
+                    width: 80px;
+                }
+                @include desk2{
+                    width: 85px;
+                }
+                @include desk3{
+                    width: 90px;
+                }
+                @include desk4{
+                    width: 100px;
+                }
+            }
+
+            .tab:hover{
+                background: color(main-light);
+            }
+        }
+    }
+}

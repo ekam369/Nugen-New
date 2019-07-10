@@ -1,0 +1,130 @@
+.head-container {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  background: #e91e63;
+  z-index: 2;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.377) 1px 1px 30px 2px;
+          box-shadow: rgba(0, 0, 0, 0.377) 1px 1px 30px 2px;
+}
+
+.head-container .tab-container {
+  width: 75%;
+  height: 100%;
+  margin-left: 2%;
+}
+
+@media (min-width: 825px) {
+  .head-container .tab-container {
+    margin-left: 1%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .head-container .tab-container {
+    margin-left: 1.5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .head-container .tab-container {
+    margin-left: 2%;
+  }
+}
+
+.head-container .tab-container .container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.head-container .tab-container .bars {
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media (min-width: 825px) {
+  .head-container .tab-container .bars {
+    visibility: hidden;
+  }
+}
+
+.head-container .tab-container .bar1 {
+  margin-top: 25px;
+}
+
+.head-container .tab-container .bar2 {
+  margin-top: 33px;
+}
+
+.head-container .tab-container .bar3 {
+  margin-top: 41px;
+}
+
+.head-container .tab-container .tabs {
+  visibility: hidden;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 7px 2em;
+  float: left;
+}
+
+@media (min-width: 825px) {
+  .head-container .tab-container .tabs {
+    visibility: visible;
+  }
+}
+
+.head-container .tab-container .tabs ul {
+  list-style-type: none;
+}
+
+.head-container .tab-container .tabs .tab {
+  display: inline;
+  width: 100px;
+  height: 22px;
+  color: #fff;
+  padding: 17px;
+}
+
+@media (min-width: 825px) {
+  .head-container .tab-container .tabs .tab {
+    width: 80px;
+  }
+}
+
+@media (min-width: 900px) {
+  .head-container .tab-container .tabs .tab {
+    width: 85px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .head-container .tab-container .tabs .tab {
+    width: 90px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .head-container .tab-container .tabs .tab {
+    width: 100px;
+  }
+}
+
+.head-container .tab-container .tabs .tab:hover {
+  background: #ed437d;
+}
+/*# sourceMappingURL=Head.css.map */
