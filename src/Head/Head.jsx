@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './css/Head.css'
-
+import './css/Head.css';
 import Photo from './Photo';
+import { Switch, Link, Route } from 'react-router-dom';
+import Design2 from '../Design2/Design2';
 
 class Head extends Component {
 
@@ -29,10 +30,13 @@ class Head extends Component {
                             <div className="tab">Attendance</div>
                             <div className="tab">Batches</div>
                             <div className="tab">Courses</div>
-                            <div className="tab">Assignments</div>
+                            <div className="tab"><Link to="/head/design">Assignments</Link></div>
                         </div>
                 </div>
                 <Photo />
+                <Switch>
+                    <Route path="/head/design" component={Design2} />
+                </Switch>
             </div>
         );
     }

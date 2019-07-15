@@ -1,23 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import Head from './Head/Head';
-// import NewTask from './Design2/NewTask';
-import Design2 from './Design2/Design2';
-import Sidebar from './Design2/Sidebar';
-import SideHead from './Head/SideHead';
+import Login from './Login/Login';
 
-function App() {
-  return (
-    <div className="App">
-      <Head />
-      <SideHead />
-      <Design2 />
-      <Sidebar />
-      {/* <NewTask /> */}
-      {/* <Design1 /> */}
-      {/* <Assignment /> */}
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+        <Login history={this.props.history}/> 
+      </div>
+    );
+  }
 }
 
 export default App;
