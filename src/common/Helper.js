@@ -1,4 +1,3 @@
-import React from 'react';
 import { BASE_URL } from "./Config";
 
 const bringUrl = (url) => {

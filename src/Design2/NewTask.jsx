@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
 import './css/NewTask.css';
+import { Link } from 'react-router-dom';
 
 class NewTask extends Component {
-
-    hide = () => {
-        document.getElementById("newtask").style.visibility = "hidden";
-        document.getElementsByTagName("BODY")[0].style.overflow = "visible";
-    }
-
-    render() { 
-
+    render(){
         return (  
             <div>
-                <div onClick={this.hide} className="cross-cont">
-                    <div className="cross c1"></div>
-                    <div className="cross c2"></div>
-                </div>
-                <div id="newtask" className="new-task-par">
+                <Link to="/design">
+                    <div className="cross-cont">
+                        <div className="cross c1"></div>
+                        <div className="cross c2"></div>
+                    </div>
+                </Link>
+                <div id="task-par" className="new-task-par">
                 <div className="new-task-cont">
                     <div className="new-today-task">TODAY'S TASK</div>
                     <div className="hint-box"></div>
@@ -39,6 +35,7 @@ class NewTask extends Component {
             </div>
         );
     }
-}
+
+    }
  
 export default NewTask;

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './css/Head.css';
 import Photo from './Photo';
-import { Switch, Link, Route } from 'react-router-dom';
-import Design2 from '../Design2/Design2';
+import { Link } from 'react-router-dom';
 
 class Head extends Component {
 
@@ -16,6 +15,10 @@ class Head extends Component {
 
     render() { 
 
+        const style = {
+            background: "#e25383"
+        }
+
         return (  
             <div className="head-container">
                 <div className="tab-container">
@@ -26,17 +29,26 @@ class Head extends Component {
                     </div>
 
                         <div className="tabs">
-                            <div className="tab">Dashboard</div>
-                            <div className="tab">Attendance</div>
-                            <div className="tab">Batches</div>
-                            <div className="tab">Courses</div>
-                            <div className="tab"><Link to="/head/design">Assignments</Link></div>
+                            <div className="tab">
+                                <div className="tab-tex">
+                                    Dashboard
+                                </div>
+                            </div>
+                            <div className="tab">
+                                <div className="tab-tex">Attendance</div>
+                            </div>
+                            <div className="tab">
+                                <div className="tab-tex">Batches</div>
+                            </div>
+                            <div className="tab">
+                                <div className="tab-tex">Courses</div>
+                            </div>
+                            <div className="tab" style={this.props.clicked?style:null}>
+                                <Link className="Link" to="/design">Assignments</Link>
+                            </div>
                         </div>
                 </div>
                 <Photo />
-                <Switch>
-                    <Route path="/head/design" component={Design2} />
-                </Switch>
             </div>
         );
     }

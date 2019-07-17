@@ -92,6 +92,7 @@
   -webkit-box-shadow: black 2px 2px 30px 3px;
           box-shadow: black 2px 2px 30px 3px;
   z-index: 4;
+  text-align: center;
 }
 
 @media (min-width: 700px) {
@@ -127,6 +128,11 @@
 }
 
 .new-task-par .new-task-cont .new-today-task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 100%;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.568);
 }
@@ -139,7 +145,7 @@
 
 @media (min-width: 950px) {
   .new-task-par .new-task-cont .new-today-task {
-    margin-left: 20%;
+    margin-left: 40%;
   }
 }
 
@@ -148,7 +154,7 @@
   height: 170px;
   margin-left: 5%;
   margin-top: 30px;
-  background-image: url("/src/Design2/images/eyes.gif");
+  background-image: url("../images/eyes.gif");
   background-size: 100% 100%;
   float: left;
   border: #e91e63 1px solid;

@@ -165,6 +165,10 @@
   }
 }
 
+.side-par .new-task-cicle:hover {
+  cursor: pointer;
+}
+
 .side-par .logo-cont {
   position: absolute;
   display: -webkit-box;

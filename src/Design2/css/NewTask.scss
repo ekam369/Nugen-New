@@ -104,6 +104,7 @@ transform-origin: 50%;
   width: 100%;
   height: 100%;
 
+  // background: #000;
   background: rgba(0, 0, 0, 0.678);
 
   .new-task-cont {
@@ -114,6 +115,7 @@ transform-origin: 50%;
     border-radius: 10px;
     box-shadow: rgb(0, 0, 0) 2px 2px 30px 3px;
     z-index: 4;
+    text-align: center;
 
     @include desk2{
       width: 90%;
@@ -134,14 +136,16 @@ transform-origin: 50%;
     }
 
     .new-today-task {
+      display: flex;
+      text-align: center;
+      width: 100%;
       font-size: 22px;
       color: rgba(0, 0, 0, 0.568);
-
       @include desk3{
         font-size: 28px; 
       }
       @include desk5{
-        margin-left: 20%;
+        margin-left: 40%;
       }
     }
 
@@ -150,7 +154,7 @@ transform-origin: 50%;
       height: 170px;
       margin-left: 5%;
       margin-top: 30px;
-      background-image: url("/src/Design2/images/eyes.gif");
+      background-image: url("../images/eyes.gif");
       background-size: 100% 100%;
       float: left;
       border: #e91e63 1px solid;

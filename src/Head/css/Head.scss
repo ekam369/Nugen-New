@@ -1,6 +1,6 @@
 $color : (
     main: #e91e63,
-    main-light: lighten(#e91e63, 8%),
+    main-light: #e25383,
     temp : #000,
     tex : #fff 
 );
@@ -101,13 +101,18 @@ $desk4: 1400px;
                 list-style-type: none;
             }
             .tab{
-                display: inline;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 100px;
                 height: 22px;
                 color: color(tex);
-                padding: 17px;                
-                // background: color(temp);
+                padding: 17px 19px;;             
 
+                .Link{
+                    text-decoration: none;
+                    color: #fff;
+                }
                 @include desk1{
                     width: 80px;
                 }
