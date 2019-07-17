@@ -12,7 +12,7 @@ class Sidebar extends Component {
                     <i className='fas fa-angle-double-right side-right'></i>
                 </div>
                 <div className="side-par">
-                    <Link to="/design/newtask">
+                    <Link to="/newtask">
                         <div onClick={this.showTaskHandler} className="new-task-cicle">
                             <div className="plus p1"></div>
                             <div className="plus p2"></div>

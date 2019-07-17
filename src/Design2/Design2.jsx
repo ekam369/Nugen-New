@@ -5,7 +5,7 @@ import Aux from '../hoc/Aux';
 import Head from '../Head/Head';
 import Sidebar from './Sidebar';
 import NewTask from './NewTask';
-import { BrowserRouter as Route, } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 class Design2 extends Component {
 
@@ -31,7 +31,7 @@ class Design2 extends Component {
                     <div className="language">PYTHON</div>
                     <Design2js />
                 </div>
-                <Route path="/design/newtask" component={NewTask} />
+                <Route path="/newtask" component={NewTask} />
             </Aux>
         );
     }

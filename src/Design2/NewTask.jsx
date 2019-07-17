@@ -6,6 +6,7 @@ class NewTask extends Component {
     render(){
         return (  
             <div>
+                 
                 <Link to="/design">
                     <div className="cross-cont">
                         <div className="cross c1"></div>
